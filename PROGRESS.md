@@ -88,3 +88,4 @@ scripts/build.sh       <- concatenates guide/*.md -> GUIDE.md, copies content to
 - [2026-09-06 #7] INTERRUPTED AGAIN mid-write of big ch13 file (lost). Now splitting ch13 into per-tier files 13a..13e, each pushed immediately. 13a (tier1 <$700) done.
 - [2026-09-06 #8] ch13 COMPLETE (13a-e). Next: ch14 personas (split into 14a/14b), then 15-21.
 - [2026-09-06 #9] ch14 COMPLETE (14a/14b). Next: ch15 buying strategy, ch16 setup, ch17 accessories, ch18 mistakes, ch19 FAQ, ch20 glossary, ch21 sources. Then build script + web.
+- [2026-09-06 #10] ALL GUIDE CHAPTERS WRITTEN (00-21). Next: scripts/build.sh → GUIDE.md; then web/ (index.html + css + js + data/laptops.json + content); GitHub Pages workflow.
