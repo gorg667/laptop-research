@@ -91,3 +91,4 @@ scripts/build.sh       <- concatenates guide/*.md -> GUIDE.md, copies content to
 - [2026-09-06 #10] ALL GUIDE CHAPTERS WRITTEN (00-21). Next: scripts/build.sh → GUIDE.md; then web/ (index.html + css + js + data/laptops.json + content); GitHub Pages workflow.
 - [2026-09-06 #11] INTERRUPTED AGAIN (3rd). build.sh recreated; GUIDE.md generated. Next: web/data/laptops.json, then web/index.html+css+js (small files, commit each).
 - [2026-09-06 #12] Web app written: index.html, css/style.css, js/app.js (router+md render), js/tools.js (compare+finder), data/laptops.json. Next: local test, fix bugs, GitHub Pages workflow, README update.
+- [2026-09-06 #13] Local server tested (all routes 200, no JS console errors via hosted Playwright on /, /compare, /finder, /ch/...). Local chromium screenshots unavailable (missing sys libs) — skip. Next: GitHub Pages workflow (deploy web/ + copy GUIDE.md), README, final PROGRESS.
