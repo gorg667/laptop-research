@@ -48,6 +48,17 @@ for f in files:
     m = re.search(r'^# (.+)$', text, re.M) or re.search(r'^## (.+)$', text, re.M)
     title = m.group(1).strip() if m else f.stem
     short = re.sub(r'^Chapter \d+ — ', '', title)
+    overrides = {
+        "00-intro.md": "Introduction & TL;DR",
+        "13a-picks-tier1.md": "Picks by budget · Tier 1 · < $700",
+        "13b-picks-tier2.md": "Tier 2 · $700–1,000",
+        "13c-picks-tier3.md": "Tier 3 · $1,000–1,500",
+        "13d-picks-tier4.md": "Tier 4 · $1,500–2,200",
+        "13e-picks-tier5.md": "Tier 5 · $2,200+ & summary",
+        "14a-personas-1.md": "Picks by persona · 1–6",
+        "14b-personas-2.md": "Picks by persona · 7–14",
+    }
+    short = overrides.get(f.name, short)
     manifest.append({"file": f.name, "title": title, "short": short, "words": len(text.split())})
 pathlib.Path("web/content/manifest.json").write_text(json.dumps(manifest, indent=2, ensure_ascii=False), encoding="utf-8")
 print(f"manifest: {len(manifest)} chapters, {sum(c['words'] for c in manifest)} words")

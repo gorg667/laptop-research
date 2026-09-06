@@ -34,7 +34,7 @@
   const isPicks = f => /^1[34]/.test(f);
   const isFund = f => /^(0\d|1[0-2])/.test(f);
   function buildNav(man) {
-    const mk = c => `<a href="#/ch/${c.file}" data-route="/ch/${c.file}">${c.short.replace(/^Tier (\d).*?"(.*)"$/, 'Tier $1 · $2')}<span class="words">${(c.words/1000).toFixed(1)}k</span></a>`;
+    const mk = c => `<a href="#/ch/${c.file}" data-route="/ch/${c.file}">${c.short}<span class="words">${(c.words/1000).toFixed(1)}k</span></a>`;
     $('#navFund').innerHTML = man.filter(c => isFund(c.file)).map(mk).join('');
     $('#navPicks').innerHTML = man.filter(c => isPicks(c.file)).map(mk).join('');
     $('#navRest').innerHTML = man.filter(c => !isFund(c.file) && !isPicks(c.file)).map(mk).join('');

@@ -2,7 +2,7 @@
   {
     "file": "00-intro.md",
     "title": "The Definitive Laptop Guide for CS Students & Software Engineers (September 2026 Edition)",
-    "short": "The Definitive Laptop Guide for CS Students & Software Engineers (September 2026 Edition)",
+    "short": "Introduction & TL;DR",
     "words": 1489
   },
   {
@@ -80,43 +80,43 @@
   {
     "file": "13a-picks-tier1.md",
     "title": "Chapter 13 — The Picks, by Budget",
-    "short": "The Picks, by Budget",
+    "short": "Picks by budget · Tier 1 · < $700",
     "words": 979
   },
   {
     "file": "13b-picks-tier2.md",
     "title": "Tier 2 — $700–1,000: \"The value sweet spot\"",
-    "short": "Tier 2 — $700–1,000: \"The value sweet spot\"",
+    "short": "Tier 2 · $700–1,000",
     "words": 852
   },
   {
     "file": "13c-picks-tier3.md",
     "title": "Tier 3 — $1,000–1,500: \"The mainstream recommendation\"",
-    "short": "Tier 3 — $1,000–1,500: \"The mainstream recommendation\"",
+    "short": "Tier 3 · $1,000–1,500",
     "words": 1056
   },
   {
     "file": "13d-picks-tier4.md",
     "title": "Tier 4 — $1,500–2,200: \"Professional tools\"",
-    "short": "Tier 4 — $1,500–2,200: \"Professional tools\"",
+    "short": "Tier 4 · $1,500–2,200",
     "words": 1084
   },
   {
     "file": "13e-picks-tier5.md",
     "title": "Tier 5 — $2,200 and up: \"Money is not the constraint\"",
-    "short": "Tier 5 — $2,200 and up: \"Money is not the constraint\"",
+    "short": "Tier 5 · $2,200+ & summary",
     "words": 1030
   },
   {
     "file": "14a-personas-1.md",
     "title": "Chapter 14 — The Picks, by Persona",
-    "short": "The Picks, by Persona",
+    "short": "Picks by persona · 1–6",
     "words": 952
   },
   {
     "file": "14b-personas-2.md",
     "title": "14.7 The Working Software Engineer (Web / Backend / Cloud)",
-    "short": "14.7 The Working Software Engineer (Web / Backend / Cloud)",
+    "short": "Picks by persona · 7–14",
     "words": 1194
   },
   {
