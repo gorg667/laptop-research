@@ -103,7 +103,7 @@
       if (ans.os === 'Linux') { R = R.filter(l => l.linux >= 4); notes.push('Linux daily-driver: filtered to machines rated ≥4/5 for Linux; Snapdragon excluded (Ch. 3 §3.7).'); }
       // GPU
       if (ans.gpu === 'cuda') { R = R.filter(l => /RTX/.test(l.gpu)); notes.push('CUDA required → Nvidia dGPU only. Prefer ≥12 GB VRAM (5070 Ti+) for real training; 8 GB cards are marginal (Ch. 12). Also consider a light laptop + GPU desktop.'); }
-      else if (ans.gpu === 'game') { R = R.filter(l => !/^integrated$/.test(l.gpu)); notes.push('Unreal / AAA gaming → discrete GPU (or M5 Pro-class GPU for Mac-native games). 32 GB RAM minimum.'); }
+      else if (ans.gpu === 'game') { R = R.filter(l => !/^integrated/.test(l.gpu)); notes.push('Unreal / AAA gaming → discrete GPU (or M5 Pro-class GPU for Mac-native games). 32 GB RAM minimum.'); }
       else if (ans.gpu === 'llm') { R = R.filter(l => l.tags.includes('local-llm') || /M5 Pro|M5 Max|Strix/.test(l.chip) || /RTX 5080|5090|PRO/.test(l.gpu)); notes.push('Large local LLMs → unified memory (M5 Pro/Max, Strix Halo) or 16–24 GB VRAM. The model must fit first (Ch. 2 §2.2).'); }
       else { R = R.filter(l => /^integrated/.test(l.gpu)); notes.push('No dGPU needed — integrated graphics are sufficient for ~90% of CS/SWE work; you save weight, battery, noise, and money (Ch. 12).'); }
       // Mobility
@@ -114,7 +114,8 @@
       if (!B.length) { B = R.filter(l => l.tier <= t + 1); notes.push('Nothing in your tier matched every constraint — showing the next tier up.'); }
       R = B;
       // Persona boost
-      R.sort((a, b) => (b.personas.includes(ans.persona) - a.personas.includes(ans.persona)) || (b.tier - a.tier) || (b.keyboard + b.displayScore + b.battery + b.build) - (a.keyboard + a.displayScore + a.battery + a.build));
+      const boost = l => (l.personas.includes(ans.persona) ? 10 : 0) + (l.personas[0] === ans.persona ? 3 : 0) + (l.tags.some(t => /^best|linux-first|refurb/.test(t)) ? 2 : 0) + l.tier;
+      R.sort((a, b) => (boost(b) - boost(a)) || (b.keyboard + b.displayScore + b.battery + b.build) - (a.keyboard + a.displayScore + a.battery + a.build));
       const top = R.slice(0, 3);
       const res = app.querySelector('#res');
       if (!top.length) { res.innerHTML = `<h3>No match</h3><p>Your constraints conflict (e.g. Linux + Snapdragon, or a dGPU under $700). Loosen one and try again, or read <a href="#/ch/13a-picks-tier1.md">Chapter 13</a>.</p>`; return; }
