@@ -75,7 +75,9 @@ web/              static site
 research/         raw research notes with sources (Sep 2026)
 scripts/          build.sh, deploy-pages.sh, validate.py, qa.py
 ci-templates/     optional GitHub Actions workflow
-PROGRESS.md       agent working log / reasoning trail
+PROGRESS.md       agent working log / reasoning trail (repo-specific state; read first when resuming)
+CLAUDE.md         general rules for AI agents working in an ephemeral sandbox (push after every step)
+IMPROVEMENTS.md   prioritised backlog of future work
 ```
 
 ## Keyboard shortcuts (web)

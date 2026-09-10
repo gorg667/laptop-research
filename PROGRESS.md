@@ -5,6 +5,8 @@
 > Every instance of the agent MUST: (1) read this file first, (2) update it after each work chunk,
 > (3) `git add -A && git commit && git push origin main` after EVERY meaningful change.
 > **No branches, no PRs — push straight to `main`.** (Explicit user instruction.)
+>
+> General (repo-agnostic) rules for surviving sandbox resets are in `CLAUDE.md`. The backlog of future work is in `IMPROVEMENTS.md`.
 
 ---
 
@@ -100,3 +102,4 @@ scripts/build.sh       <- concatenates guide/*.md -> GUIDE.md, copies content to
 - [2026-09-10 #19] README v1.1 + LICENSE + validate.py + build.sh (sitemap + validate) pushed. **gh-pages redeployed; live site verified** (v1.1 banner, 33 laptops, sitemap 200, zero console errors on live /compare). Sandbox reset a 4th time — nothing lost. Remaining ideas (optional polish, none blocking): (a) more guide depth — e.g. a "decision flowchart" chapter or per-persona checklists; (b) laptops.json: add RTX Spark placeholder entries once prices exist; (c) qa.py in CI template; (d) OG image.
 - [2026-09-10 #20] Added guide/15b-spec-sheet-decoder.md (§15.8 one-page red/amber/green checklist), wired into build (nav label), cross-linked from 15.7, changelog updated; OG image (web/og.svg) + home quick link. QA: 0 errors/overflow at 3 widths. Redeploying gh-pages. 28 chapters / ~44k words / 33 laptops. Sandbox reset 6x total this session; nothing lost thanks to commit-per-step. State: COMPLETE for v1.1. If continuing: per-persona printable checklists, RTX Spark entries once priced, CI (ci-templates) running validate.py + qa.py.
 - [2026-09-10 #21] FINAL for this session: gh-pages redeployed and verified live (28 chapters / 43,961 words in manifest, og.svg 200, 15b page renders with 0 console errors). ci-templates/validate.yml added. Working tree clean, main == origin/main.
+- [2026-09-10 #22] Per user request: added CLAUDE.md (general ephemeral-sandbox working rules — not repo-specific) and IMPROVEMENTS.md (prioritised backlog A–E). Linked from README and this file. Pushed.
