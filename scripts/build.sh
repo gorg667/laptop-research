@@ -57,6 +57,7 @@ for f in files:
         "13e-picks-tier5.md": "Tier 5 · $2,200+ & summary",
         "14a-personas-1.md": "Picks by persona · 1–6",
         "14b-personas-2.md": "Picks by persona · 7–14",
+        "15b-spec-sheet-decoder.md": "Spec-sheet decoder (checklist)",
     }
     short = overrides.get(f.name, short)
     manifest.append({"file": f.name, "title": title, "short": short, "words": len(text.split())})
