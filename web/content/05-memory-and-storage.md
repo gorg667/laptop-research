@@ -8,7 +8,7 @@ What happened: AI data-center demand for HBM and server DDR5 consumed fab capaci
 
 What it did to laptops, concretely:
 - Apple: +$200 on MacBook Air, +$300 on MacBook Pro (June 25, 2026). RAM upgrade tiers stayed at $200 per step (16→24→32 GB) — meaning, perversely, the *relative* cost of extra RAM on a Mac is now lower than the base-price increase.
-- Dell, Lenovo, HP: 15–20%+ list-price increases across 2026, with more warned for H2.
+- Dell, Lenovo, HP: 15–20%+ list-price increases across 2026, with more warned for H2. On its August 26, 2026 earnings call HP's CFO said the company "expect[s] to continue to increase pricing as input costs rise," that memory and storage now account for roughly **35% of a PC's bill of materials** (up from 15–18%), and that the cheaper inventory that cushioned H1 pricing is used up. DRAM contract prices rose ~95% in Q1 and ~89% in Q2 2026. IDC and HP both expect PC unit shipments to fall by "high teens" percentages in H2 2026 — OEMs are shipping fewer, pricier machines and "reconfiguring" products (HP's word) — trimming base RAM and storage tiers and pushing more 8 GB SKUs at the low end — rather than absorbing costs.
 - Framework: repeated component price increases; its LPCAMM2 supplier doubled prices mid-year. A 32 GB LPCAMM2 module is $800 on Framework's store; 64 GB is $1,600.
 - Aftermarket DDR5 SO-DIMMs: 3–4× their 2024 prices. A 2×16 GB DDR5-5600 kit that was $80–100 is now $250–350.
 

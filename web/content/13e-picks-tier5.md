@@ -40,5 +40,5 @@ Above $2,200, you should be buying to solve a specific problem: sustained multi-
 | < $700 | Used ThinkPad T14 Gen 3/4 (32 GB) | HP OmniBook 5 14 (X Plus) | Used ThinkPad T14 AMD | — (don't) | Corporate-refresh ThinkPads |
 | $700–1,000 | **Refurb MacBook Air M4 16 GB** | ThinkPad T14/T14s Gen 6 AMD | ThinkPad T14 Gen 6 AMD / Framework 13 (Ryzen) | LOQ 15 RTX 5060 (only if needed) | Apple Certified Refurbished |
 | $1,000–1,500 | **MacBook Air M5 24 GB** | X1 Carbon Gen 13/14 · Surface Laptop 8 · OmniBook Ultra 14 | Framework 13 Pro · T14s Gen 7 AMD | Legion 5i Gen 10 | Buy Windows on sale, never list |
-| $1,500–2,200 | MacBook Pro 14 M5 (refurb / wait for M6) | Dell XPS 14 (2026) · Legion Pro 5i | ThinkPad P14s Gen 7 AMD | **Zephyrus G14 (2026)** | Refurb M5 MBP |
+| $1,500–2,200 | MacBook Pro 14 M5 (refurb now / M6 late 2026) | Dell XPS 14 (2026) · Legion Pro 5i | ThinkPad P14s Gen 7 AMD | **Zephyrus G14 (2026)** | Refurb M5 MBP |
 | $2,200+ | **MacBook Pro 14/16 M5 Pro 48 GB** | XPS 16 · Blade 16 | ThinkPad P1 Gen 8 · Framework 16 | Zephyrus G16 5070 Ti/5080 · P1 Gen 8 | Employer pays |

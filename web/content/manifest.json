@@ -3,7 +3,7 @@
     "file": "00-intro.md",
     "title": "The Definitive Laptop Guide for CS Students & Software Engineers (September 2026 Edition)",
     "short": "Introduction & TL;DR",
-    "words": 1489
+    "words": 1639
   },
   {
     "file": "01-methodology.md",
@@ -21,19 +21,19 @@
     "file": "03-operating-systems.md",
     "title": "Chapter 3 — Operating Systems: macOS vs. Windows vs. Linux for Developers",
     "short": "Operating Systems: macOS vs. Windows vs. Linux for Developers",
-    "words": 3170
+    "words": 3232
   },
   {
     "file": "04-silicon.md",
     "title": "Chapter 4 — Silicon: The 2026 Laptop Chip Landscape Explained",
     "short": "Silicon: The 2026 Laptop Chip Landscape Explained",
-    "words": 3172
+    "words": 3992
   },
   {
     "file": "05-memory-and-storage.md",
     "title": "Chapter 5 — Memory and Storage: Buying Decisions in a Shortage Year",
     "short": "Memory and Storage: Buying Decisions in a Shortage Year",
-    "words": 1585
+    "words": 1700
   },
   {
     "file": "06-display.md",
@@ -75,13 +75,13 @@
     "file": "12-discrete-gpu.md",
     "title": "Chapter 12 — Do You Need a Discrete GPU?",
     "short": "Do You Need a Discrete GPU?",
-    "words": 1566
+    "words": 1693
   },
   {
     "file": "13a-picks-tier1.md",
     "title": "Chapter 13 — The Picks, by Budget",
     "short": "Picks by budget · Tier 1 · < $700",
-    "words": 979
+    "words": 1393
   },
   {
     "file": "13b-picks-tier2.md",
@@ -93,19 +93,19 @@
     "file": "13c-picks-tier3.md",
     "title": "Tier 3 — $1,000–1,500: \"The mainstream recommendation\"",
     "short": "Tier 3 · $1,000–1,500",
-    "words": 1056
+    "words": 1059
   },
   {
     "file": "13d-picks-tier4.md",
     "title": "Tier 4 — $1,500–2,200: \"Professional tools\"",
     "short": "Tier 4 · $1,500–2,200",
-    "words": 1084
+    "words": 1135
   },
   {
     "file": "13e-picks-tier5.md",
     "title": "Tier 5 — $2,200 and up: \"Money is not the constraint\"",
     "short": "Tier 5 · $2,200+ & summary",
-    "words": 1030
+    "words": 1031
   },
   {
     "file": "14a-personas-1.md",
@@ -123,7 +123,7 @@
     "file": "15-buying-strategy.md",
     "title": "Chapter 15 — Buying Strategy: Paying Less for the Same Laptop",
     "short": "Buying Strategy: Paying Less for the Same Laptop",
-    "words": 1507
+    "words": 1558
   },
   {
     "file": "16-setup-guide.md",
@@ -141,13 +141,13 @@
     "file": "18-mistakes-and-myths.md",
     "title": "Chapter 18 — Common Mistakes and Persistent Myths",
     "short": "Common Mistakes and Persistent Myths",
-    "words": 1306
+    "words": 1344
   },
   {
     "file": "19-faq.md",
     "title": "Chapter 19 — Frequently Asked Questions",
     "short": "Frequently Asked Questions",
-    "words": 1251
+    "words": 1344
   },
   {
     "file": "20-glossary.md",
@@ -159,6 +159,6 @@
     "file": "21-sources-and-changelog.md",
     "title": "Chapter 21 — Sources, Caveats, and Changelog",
     "short": "Sources, Caveats, and Changelog",
-    "words": 838
+    "words": 1230
   }
 ]

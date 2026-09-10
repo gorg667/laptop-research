@@ -33,6 +33,6 @@ New MacBook Airs live here after the June price increase, alongside the best Win
 - **Apple MacBook Air M4 15" refurb, 24 GB** — $1,100–1,300. Same argument as Tier 2, bigger screen.
 
 ### Avoid in this tier
-- **MacBook Pro 14" M5 base at $1,999** — over budget *and* rumored to be replaced by M6 this fall. Wait or buy refurb.
+- **MacBook Pro 14" M5 base at $1,999** — over budget *and* due to be replaced by the (now-announced) M6 late this year. Wait or buy refurb.
 - Thin Windows machines with 16 GB soldered at $1,300+ — insist on 32 GB at this price, or buy the Air.
 - Anything with Intel Arrow Lake H or 14th-gen Core in a thin chassis.

@@ -35,7 +35,7 @@
 
 > **Who this is for:** anyone who writes code for a living or for a degree, and who wants *one* machine that handles coursework, professional software engineering, and everyday life — browsing, streaming, notes, calls, the occasional game — without compromise.
 >
-> **Vantage point:** written in early September 2026. Hardware, prices, and recommendations reflect that moment. Where something is a rumor rather than a fact, it is labeled as such. Where prices are quoted, they are **US MSRP in USD** unless stated otherwise, and they are *unusually volatile* this year for reasons explained in Chapter 1.
+> **Vantage point:** written in early September 2026 and fact-checked against the news through **September 10, 2026** (after Apple's September 9 event and IFA Berlin). Hardware, prices, and recommendations reflect that moment. Where something is a rumor rather than a fact, it is labeled as such. Where prices are quoted, they are **US MSRP in USD** unless stated otherwise, and they are *unusually volatile* this year for reasons explained in Chapter 1.
 
 ---
 
@@ -67,7 +67,9 @@ If you are in a hurry, read the TL;DR below, then jump to Chapter 13 (picks by b
 
 **Whatever you buy: get 16 GB of RAM minimum, 32 GB if you can, and never 8 GB.** In 2026, RAM is the one component you cannot fix later on most laptops and the one component whose price has gone crazy. 8 GB machines — including Apple's otherwise-lovely $599–699 **MacBook Neo** — will make Docker, IntelliJ, Android Studio, and a modern browser fight each other for air. The Neo is a great laptop for a history major; it is a bad laptop for a CS major.
 
-**Things to *wait* for, if you can:** the base 14" MacBook Pro is expected to move to an **M6 chip this fall (rumor)** — don't buy the M5 version at full price in September–October 2026. Nvidia's **N1X** Arm laptops are trickling out late in 2026 — exciting, but a first-generation platform; don't wait for them unless you specifically need Nvidia + Arm efficiency.
+**Things to *wait* for, if you can:** Apple's **M6 chip is now real** — it was announced August 25 in the Mac mini — and the base 14" MacBook Pro is widely reported to get it in **late 2026** (the September 9 event was iPhones only). Don't buy the M5 MacBook Pro 14" at full price this fall. The MacBook *Air* is not expected to get M6 until early 2027, so buying an M5 Air now is fine. Nvidia's **RTX Spark (N1X)** Arm laptops were shown at IFA in September with no prices and an October-ish launch — exciting, but a first-generation platform; don't wait for them unless you specifically need CUDA + Arm efficiency and can defer to 2027.
+
+**A cheap-laptop warning for 2026:** there is a new wave of good-looking **$699 laptops with 8 GB of RAM** — the MacBook Neo, the Dell XPS 13 (2026), the Framework Laptop 12 — built on iPhone-class or Intel "Wildcat Lake" chips. They are excellent machines *for other majors*. For CS, the 16 GB versions cost $100–400 more, and at that price a refurbished M4 MacBook Air or a used 32 GB ThinkPad is a better computer.
 
 ---
 
@@ -459,7 +461,7 @@ Dual-booting Windows and Linux on the same drive is completely standard on x86 P
 
 **Linux on Snapdragon X / X2:** Ubuntu has "concept" images and there's active upstream work, but as of late 2025 Phoronix measured performance well below the same hardware on Windows, and the X2 generation is earlier still in its enablement. Missing or partial: GPU acceleration in some configurations, audio DSP on some models, suspend, cameras, some Wi-Fi. **Not recommended for anyone who needs the laptop to work.** Revisit in 2027.
 
-**macOS on Apple Silicon:** six years in; the asterisk is small. Rosetta 2 handles remaining x86 Mac apps (fast). Docker: `--platform linux/amd64` images run under Rosetta-in-VM at maybe 30–50% speed — fine for the odd dependency, painful as a primary workflow. Homebrew is fully native. Java, Node, Python, Go, Rust, .NET, Ruby, Elixir, Haskell, OCaml — all native. The one hard wall: no x86 VMs at speed (Parallels/UTM run *Arm* Windows and Linux; x86 guests are emulated slowly).
+**macOS on Apple Silicon:** six years in; the asterisk is small. Rosetta 2 handles remaining x86 Mac apps (fast) — but note that **macOS 27 "Golden Gate" (fall 2026) is the last release to include Rosetta 2** for general apps; from macOS 28 (2027) x86-only Mac software will not run. In practice almost nothing a developer uses is still x86-only, but check any legacy vendor tool. macOS 27 also drops the last Intel Macs entirely — do not buy one used. Docker: `--platform linux/amd64` images run under Rosetta-in-VM at maybe 30–50% speed — fine for the odd dependency, painful as a primary workflow. Homebrew is fully native. Java, Node, Python, Go, Rust, .NET, Ruby, Elixir, Haskell, OCaml — all native. The one hard wall: no x86 VMs at speed (Parallels/UTM run *Arm* Windows and Linux; x86 guests are emulated slowly).
 
 ## 3.8 Decision flowchart
 
@@ -508,7 +510,9 @@ A subtle but crucial point: **the same chip performs differently in different la
 - Memory bandwidth (153 → 614 GB/s across the range) is the spec that matters for local LLMs. An M5 Max with 128 GB is the most capable *laptop* for running large models locally that exists, period. A 32 GB M5 Air can run 7–14B-parameter models comfortably.
 - Xcode compile times are excellent; Android emulator is native Arm and fast.
 
-**Generational advice.** M4 (2024–25) is ~15% behind M5 and is the refurbished bargain of the year. M3 is fine. M2 is still a good machine with 16 GB. M1 (2020) is showing its age in single-core but still perfectly usable; buy only with 16 GB and only cheap. **Avoid 8 GB configs of any generation.** Rumored: base 14" MacBook Pro moves to **M6 (2 nm)** in fall 2026; no M6 Pro/Max — Apple reportedly skips to M7 Pro/Max in 2027. If you're eyeing the base M5 MBP in September–October 2026, wait.
+**M6 — announced, but not yet in a laptop.** On August 25, 2026 Apple announced the **M6**, its first 2 nm chip, in the Mac mini (shipping September 22; $899). It is a real product with a published spec sheet, not a rumor: a **12-core CPU** in a new three-tier layout (2 "super" cores + 4 performance cores + 6 efficiency cores), a 12-core GPU with Neural Accelerators, a dual 16-core Neural Engine, and 16/24/32 GB of unified memory at **up to 170 GB/s** (153 GB/s on the 16 GB config). Apple's claims versus M4: ~40% faster CPU (single-thread emphasis — "the world's fastest single-threaded performance"), ~1.2× multi-thread, 2× graphics, 4× AI compute. Against the M5 that implies roughly +10–15% single-core and a modest multi-core gain; independent benchmarks are due when units ship. **No M6 MacBook exists as of September 10, 2026.** Bloomberg and MacRumors report the base 14" MacBook Pro gets M6 in **late 2026** (the September 9 event was iPhones only), and the MacBook Air moves to M6 in **early 2027**. There will be no M6 Pro/Max — the OLED "MacBook Ultra" redesign (late 2026/early 2027) uses M5 Pro/Max, and Apple skips to M7 Pro/Max in late 2027.
+
+**Generational advice.** M4 (2024–25) is ~15% behind M5 and is the refurbished bargain of the year. M3 is fine. M2 is still a good machine with 16 GB. M1 (2020) is showing its age in single-core but still perfectly usable; buy only with 16 GB and only cheap. **Avoid 8 GB configs of any generation.** **Never buy an Intel Mac in 2026**: macOS 27 "Golden Gate" (this fall) drops every remaining Intel model, and it is also the *last* macOS to ship Rosetta 2 — from macOS 28 (2027) x86-only Mac apps stop running on Apple silicon too. If you're eyeing the base M5 MBP in September–October 2026, wait for the M6 version or buy refurbished. If you're eyeing an M5 Air, buy it — the M6 Air is at least four to six months out, and the M5 is not going to feel slow.
 
 ## 4.3 Intel Core Ultra Series 3 "Panther Lake"
 
@@ -534,6 +538,8 @@ A subtle but crucial point: **the same chip performs differently in different la
 - The B390 requirement for soldered LPDDR5X means X-series machines don't have SO-DIMM slots (Framework uses LPCAMM2 to keep upgradeability).
 
 **Caveats.** Supply constraints were reported through mid-2026; some configurations are hard to find. Not all "Panther Lake" laptops have the good GPU — check for the "X" (e.g., the Asus Zenbook S14 2026 ships a non-X part and reviewers called its iGPU slow).
+
+**The naming trap: "Core Series 3" (Wildcat Lake) is not "Core Ultra Series 3".** In spring 2026 Intel launched a budget family on the same 18A process called **Core Series 3** — no "Ultra" — codenamed *Wildcat Lake*: **Core 3 304, Core 5 310/320/330, Core 7 350/360**. These are 15 W (35 W turbo) chips with **2 P-cores + 4 low-power E-cores, six threads, no hyper-threading, and only one or two Xe graphics cores**. They appear in the $600–900 class: the new Dell XPS 13 (2026), Framework Laptop 12 refresh, Lenovo IdeaPad 3/5, Acer Aspire. PCMag's testing of the Core 7 350 found it roughly **on par with the MacBook Neo's A18 Pro** and behind Ryzen AI 7 350, Arrow Lake U, and Snapdragon X Plus; graphics are weak. Verdict for developers: fine for VS Code + browser + Python; not a chip to pay $1,000 for. **Read the model number carefully** — "Core 5 320" (Wildcat Lake, budget) and "Core Ultra 5 325" (Panther Lake, mainstream) are very different products with nearly identical names, and Wildcat Lake SKUs typically lack Thunderbolt 4.
 
 **Where Series 2 still makes sense.** Lunar Lake (Core Ultra 7 258V, 268V) laptops from 2024–25 are heavily discounted, have superb battery life, integrated 16/32 GB memory, and an 8-core CPU that's fine for students. Arrow Lake H (Core Ultra 7 255H, 9 285H) machines have strong CPUs and weaker GPUs; good value in discounted workstations and gaming laptops.
 
@@ -573,11 +579,13 @@ A subtle but crucial point: **the same chip performs differently in different la
 
 ## 4.6 Nvidia N1X / N1 ("RTX Spark" PCs)
 
-**What it is.** Nvidia's long-rumored Arm SoC for Windows laptops, announced at Computex on May 31, 2026, with Microsoft. Up to 20 Arm cores (N1X), 12 or 10 on the N1, with a Blackwell-architecture integrated GPU that headlines have compared to a mobile RTX 5070, and "1 petaflop" of AI performance marketing. It was delayed repeatedly through 2025–26 due to software readiness; Notebookcheck reported "limited 2026 availability," with real volume expected in 2027.
+**What it is.** Nvidia's Arm SoC for Windows laptops, announced at Computex on May 31, 2026, with Microsoft, and marketed as **"RTX Spark."** The shipping configuration is a **20-core Nvidia Grace Arm CPU** paired with a **Blackwell GPU with 6,144 CUDA cores** (RTX 5070-laptop class on paper) and **up to 128 GB of unified LPDDR5X**, with "1 petaflop" of FP4 AI compute. A cheaper 10–12-core "N1" tier has been discussed but no OEM has listed one.
 
-**Why it matters.** It's the first credible way to get a *big Nvidia GPU* — with CUDA — in an efficient Arm laptop. For ML students that's a tantalizing combination. It also gives Windows on Arm a second vendor and a gaming story.
+**The first laptops (announced at IFA, September 2026):** Asus **ProArt P14** (14" 2880×1800 120 Hz OLED, 90 Wh, 1.48 kg) and **ProArt P16** (16" 4K/3K OLED, 99.9 Wh, 1.77 kg); Lenovo **Yoga Pro 9n** (15.3" 2.5K 165 Hz OLED, 92.5 Wh, 1.65 kg, up to 128 GB / 4 TB, two USB4 + two USB-A + HDMI + SD) and **Yoga 9n 2-in-1**; **Dell XPS 16 Creator Edition** (tandem OLED); **HP OmniBook Ultra 16 / OmniBook X 14**; **Microsoft Surface Laptop Ultra** (15" 2000-nit mini-LED); **MSI Prestige N16 Flip AI+**. Acer and Gigabyte to follow. **As of September 10, 2026 not one of them has a price or a firm ship date** beyond "fall"; Notebookcheck's sourcing says October launch, real volume in early 2027. Hands-on reports from Gamescom (PC Gamer, Tom's Guide) saw games running smoothly with DLSS but published no controlled benchmarks, battery, or thermal numbers.
 
-**Why you shouldn't wait for it (probably).** First-generation platform; drivers, Windows-on-Arm gaming compatibility, and Linux support (Nvidia has said Linux is a target; time will tell) are unproven; pricing looks premium; availability through the end of 2026 is thin. If you need a laptop for the fall 2026 semester, buy one of the proven platforms and revisit N1X in 2027.
+**Why it matters.** It's the first credible way to get a *big Nvidia GPU* — with CUDA — in an efficient Arm laptop, and the only platform besides M5 Max and Strix Halo offering 128 GB of unified memory. For ML students that's a tantalizing combination: CUDA *and* enough memory for 70B-class models. It also gives Windows on Arm a second vendor and a gaming story (EA, Ubisoft, and Embark have announced native anti-cheat support; Nvidia itself says it's "not intended to replace x86 gaming PCs").
+
+**Why you shouldn't wait for it (probably).** First-generation platform; drivers, Windows-on-Arm compatibility, sustained performance in a 14" chassis, and Linux support (Nvidia has said Linux is a target; nothing has shipped) are all unproven; the announced designs are creator-tier machines with OLED panels and 90–100 Wh batteries, so pricing will be premium — expect $2,500+ for meaningful memory. If you need a laptop for the fall 2026 semester, buy one of the proven platforms and revisit RTX Spark in 2027 when reviews exist.
 
 ## 4.7 The comparison table
 
@@ -586,6 +594,7 @@ Rough, September 2026, based on published reviews; "relative" columns are indexe
 | Chip | ISA | Single-core (rel.) | Multi-core (rel.) | iGPU (rel.) | Efficiency | Max RAM | RAM upgradeable? | Linux | Best for |
 |---|---|---|---|---|---|---|---|---|---|
 | Apple M5 | Arm64 | 100 | 100 | 100 | ★★★★★ | 32 GB | No | Asahi only (not daily) | Everything except CUDA/Windows-only |
+| Apple M6 (Mac mini only, Sep 2026; MBP 14" late 2026 / Air early 2027) | Arm64 | ~110–115 (Apple claim, unverified) | ~105–110 | ~130 | ★★★★★ | 32 GB | No | — | Wait for it only in the base MBP |
 | Apple M5 Pro | Arm64 | 100 | ~150–165 | ~180 | ★★★★★ | 64 GB | No | — | Pro work, big builds, local ML |
 | Apple M5 Max | Arm64 | 100 | ~165 | ~300–400 | ★★★★☆ | 128 GB | No | — | Local LLMs, video, max everything |
 | Apple M4 (2024–25) | Arm64 | ~88 | ~85 | ~85 | ★★★★★ | 32 GB | No | — | Refurb value |
@@ -598,12 +607,12 @@ Rough, September 2026, based on published reviews; "relative" columns are indexe
 | Snapdragon X2 Elite Extreme (18c) | Arm64 | ~75 | ~100–120 | ~70 | ★★★★★ | 64 GB | No | ★☆☆☆☆ | Windows battery life |
 | Snapdragon X2 Elite (12c) / X2 Plus (10c) | Arm64 | ~72 | ~70–90 | ~55 | ★★★★★ | 64 GB | No | ★☆☆☆☆ | Windows ultraportables |
 | Snapdragon X Elite / X Plus (2024) | Arm64 | ~62 | ~55–70 | ~35 | ★★★★★ | 64 GB | No | ★★☆☆☆ | Discounted battery champions |
-| Nvidia N1X | Arm64 | unknown | unknown | very high | unknown | 128 GB? | No | unknown | Wait and see |
+| Nvidia RTX Spark / N1X (laptops Oct 2026+, no prices yet) | Arm64 | unknown | unknown | very high (RTX 5070-class, CUDA) | unknown | 128 GB | No | unknown | Wait and see — 2027 |
 
 ## 4.8 Decoder ring: model-number cheat sheet
 
-- **Apple:** M{gen} < M{gen} Pro < M{gen} Max < (Ultra, desktop only). Higher gen beats lower tier for single-core (M5 > M4 Pro in single-core; M4 Pro > M5 in multi-core).
-- **Intel Series 3:** Core Ultra {5|7|9|X7|X9} 3{xx}{H|U}. X = big Arc GPU. Higher number = more/faster cores. H = more power. Series 2: 2xxV = Lunar Lake (efficient, 8 cores, on-package RAM); 2xxH = Arrow Lake H (fast CPU, weak GPU); 2xxU = low-power Arrow Lake.
+- **Apple:** M{gen} < M{gen} Pro < M{gen} Max < (Ultra, desktop only). Higher gen beats lower tier for single-core (M5 > M4 Pro in single-core; M4 Pro > M5 in multi-core). M6 exists (Mac mini, Sep 2026) but is not in any laptop yet; MacBooks are M5-generation through at least late 2026.
+- **Intel Series 3:** Core **Ultra** {5|7|9|X7|X9} 3{xx}{H|U} = Panther Lake (mainstream/premium). X = big Arc GPU. Higher number = more/faster cores. H = more power. Core {3|5|7} 3{xx} **without "Ultra"** = Wildcat Lake (budget: 2P+4E, tiny GPU, usually no Thunderbolt) — e.g., Core 5 320 ≠ Core Ultra 5 325. Series 2: 2xxV = Lunar Lake (efficient, 8 cores, on-package RAM); 2xxH = Arrow Lake H (fast CPU, weak GPU); 2xxU = low-power Arrow Lake.
 - **AMD:** Ryzen AI {5|7|9} [HX] {3|4}{xx}. 3xx = Strix Point (2024–25); 4xx = Gorgon Point (2026, same thing faster). HX = 12-core top parts. "Ryzen AI Max/Max+ 3x5/4x5" = Strix Halo (big iGPU, unified memory). Non-AI "Ryzen 7 250 / Ryzen 9 270" = older Zen 4 (Hawk Point) rebrands common in budget gaming laptops — fine, but not Zen 5.
 - **Qualcomm:** Snapdragon X2 Elite Extreme (18c) > X2 Elite (12c) > X2 Plus (10c). 2024 gen: X Elite (12c) > X Plus (10c/8c).
 - **Nvidia GPUs (laptop):** RTX 5050 (8 GB) < 5060 (8 GB) < 5070 (8 GB) < 5070 Ti (12 GB) < 5080 (16 GB) < 5090 (24 GB). **Laptop GPU wattage (TGP) varies 60–175 W by model and changes performance by up to 40%** — always check the specific laptop's TGP. VRAM, not the model number, is what limits ML.
@@ -615,7 +624,8 @@ Rough, September 2026, based on published reviews; "relative" columns are indexe
 - **Want Linux with zero fuss and/or upgradeable RAM at the best price:** AMD Ryzen AI 300/400.
 - **Want maximum battery life on Windows and your tooling is modern:** Snapdragon X2.
 - **Want to run 70B-parameter models locally:** M5 Max 128 GB or a Strix Halo 128 GB machine.
-- **Want an Nvidia GPU:** any x86 laptop with an RTX 50-series dGPU; or wait for N1X in 2027.
+- **Want an Nvidia GPU:** any x86 laptop with an RTX 50-series dGPU; or wait for RTX Spark (N1X) reviews and prices in 2027.
+- **Shopping under $900:** the chips you'll see are A18 Pro (MacBook Neo), Wildcat Lake (Core 5/7 3xx), Snapdragon X Plus (2024), Ryzen AI 5/7 300, and Lunar Lake on clearance. All are fine for coursework; the RAM ceiling (often 8 GB base, 16 GB max) matters far more than the chip.
 
 
 ---
@@ -630,7 +640,7 @@ What happened: AI data-center demand for HBM and server DDR5 consumed fab capaci
 
 What it did to laptops, concretely:
 - Apple: +$200 on MacBook Air, +$300 on MacBook Pro (June 25, 2026). RAM upgrade tiers stayed at $200 per step (16→24→32 GB) — meaning, perversely, the *relative* cost of extra RAM on a Mac is now lower than the base-price increase.
-- Dell, Lenovo, HP: 15–20%+ list-price increases across 2026, with more warned for H2.
+- Dell, Lenovo, HP: 15–20%+ list-price increases across 2026, with more warned for H2. On its August 26, 2026 earnings call HP's CFO said the company "expect[s] to continue to increase pricing as input costs rise," that memory and storage now account for roughly **35% of a PC's bill of materials** (up from 15–18%), and that the cheaper inventory that cushioned H1 pricing is used up. DRAM contract prices rose ~95% in Q1 and ~89% in Q2 2026. IDC and HP both expect PC unit shipments to fall by "high teens" percentages in H2 2026 — OEMs are shipping fewer, pricier machines and "reconfiguring" products (HP's word) — trimming base RAM and storage tiers and pushing more 8 GB SKUs at the low end — rather than absorbing costs.
 - Framework: repeated component price increases; its LPCAMM2 supplier doubled prices mid-year. A 32 GB LPCAMM2 module is $800 on Framework's store; 64 GB is $1,600.
 - Aftermarket DDR5 SO-DIMMs: 3–4× their 2024 prices. A 2×16 GB DDR5-5600 kit that was $80–100 is now $250–350.
 
@@ -1378,6 +1388,7 @@ For ML: Nvidia (CUDA). Full stop. AMD's ROCm on laptop Radeon dGPUs is not a rel
 - **Best premium:** **Razer Blade 16** (RTX 5080/5090, OLED 240 Hz) $2,400–4,000+ — the MacBook Pro of gaming laptops, with Razer's warranty reputation as the caveat.
 - **The unified-memory alternative:** **HP ZBook Ultra G1a** or **Asus ROG Flow Z13** (Ryzen AI Max+ 395, up to 128 GB) — if your GPU need is "run big models" rather than CUDA.
 - **The Apple alternative:** **MacBook Pro 14/16 with M5 Max (32/40-core GPU, 36–128 GB)** — for ML via MPS/MLX, local LLMs, Metal-based graphics, and Blender; not for CUDA or Unreal.
+- **The 2027 wildcard — Nvidia RTX Spark (N1X):** an Arm laptop platform with a Blackwell GPU (6,144 CUDA cores, RTX 5070-class) and up to 128 GB unified memory — i.e., CUDA *plus* Mac-style big memory in one thin machine. Announced designs (Asus ProArt P14/P16, Lenovo Yoga Pro 9n, Dell XPS 16 Creator, Surface Laptop Ultra, HP OmniBook Ultra 16) are creator-class with OLED panels and 90–100 Wh batteries; **no prices or reviews exist as of September 10, 2026**, launch is October-ish with volume in 2027, and Windows-on-Arm plus first-gen drivers are real risks. If your GPU need is specifically "CUDA for ML" and you can wait until reviews land, it's the platform to watch. If you need a laptop this semester, don't wait (Chapter 4 §4.6).
 
 ## 12.6 The desktop + laptop strategy
 
@@ -1420,6 +1431,12 @@ Honesty first: **new laptops under $700 with 16 GB of RAM and a good screen are 
 - **Cons:** **8 GB.** RTINGS: "can't handle demanding tasks or heavy multitasking." Docker + IntelliJ + browser = swap city. No 16 GB option exists or will exist. One external display. Display gamut and camera are the cost-cutting points.
 - **Who:** A CS student whose program is Python/JS/Java in VS Code, who uses university servers or a cloud dev box for heavy work, and who wants macOS. Or a *second* machine for lectures alongside a desktop. **Not** for Android/iOS dev, Docker-heavy work, or ML courses. If you can stretch to ~$850 for a refurb M4 Air with 16 GB, do that instead — it's the single most important $150–250 in this guide.
 
+### The new $699 class: Dell XPS 13 (2026) and Framework Laptop 12 — read the RAM line first
+Two well-built laptops arrived in summer 2026 to fight the MacBook Neo at exactly $699, and both make the same trade the Neo does: **8 GB of RAM in the base model.**
+
+- **Dell XPS 13 (2026)** — $699.99 (edu −$100 through Nov 2, 2026). Intel **Core 5 320 "Wildcat Lake"** (2 P + 4 LPE cores — a budget chip, *not* Core Ultra; Chapter 4 §4.3), **8 GB** single-channel DDR5, 512 GB, 13.4" **2560×1600 120 Hz touch** matte IPS, all-aluminum, **~1.0 kg**, 1080p IR camera, Wi-Fi 7, tiny 65 W charger, **20+ h** in PCMag's video test. PCMag Editors' Choice for budget Windows ultraportables. Compromises: **no headphone jack**, only two 10 Gb/s USB-C ports (no Thunderbolt on this SKU), the screen runs dim at 50%, and 8 GB made it fail PCMag's Cinebench and Photoshop runs. **The 16 GB version is $899** — and at $899 it's competing with a refurb M4 Air and a 32 GB used ThinkPad, both of which are much faster. Panther Lake (Core Ultra) versions with up to 32 GB and Thunderbolt 4 are promised "later" and will cost $1,000+. **Verdict for CS:** a lovely lecture-notes machine; buy only the 16 GB, and only if you specifically want a 1 kg Windows laptop.
+- **Framework Laptop 12 (2026 refresh)** — $699 prebuilt (Core 3 304, 8 GB, Fedora; +$100 for Windows) / **$1,099 for Core 5 320 with 16 GB** / $549 DIY; ships October 2026. 12.2" 1920×1200 touch convertible, Wildcat Lake, Wi-Fi 7, Thunderbolt 4 on the rear expansion slots, backlit keyboard and fingerprint reader only on Core 5/7 models, ~70% better battery than gen 1. Fully repairable; **user-upgradeable DDR5 SO-DIMM** — so you *can* buy 8 GB and add a stick, though 2026 SO-DIMM prices blunt that. 80% of Framework 12 owners run Linux and Framework leans into it. **Verdict for CS:** the best *Linux* laptop under $700 if you value repairability, and the only 8 GB machine here that isn't a dead end. Slow chip; plastic; small screen.
+
 ### Also consider
 - **Lenovo IdeaPad Slim 5 / Slim 5i 14 (Ryzen AI 5 340 or Core Ultra 5 225U, 16 GB, OLED)** — $600–750 on sale. Decent all-rounder, mediocre keyboard, plastic.
 - **Acer Swift Go 14 / Swift 14 AI (Ryzen AI 300, 16 GB, OLED)** — $650–800 on sale. Good screen, so-so build, Acer support.
@@ -1428,7 +1445,8 @@ Honesty first: **new laptops under $700 with 16 GB of RAM and a good screen are 
 - **Dell 14 (Ryzen AI 5 / Core Ultra 5, 16 GB)** — $600–750. Dell's renamed Inspiron. Adequate; check for the 1200p IPS rather than the 1080p.
 
 ### Avoid in this tier
-- Anything with **8 GB RAM** except the Neo (and only for the use case above).
+- Anything with **8 GB RAM** — including the base MacBook Neo, XPS 13, and Framework 12 — except for the narrow "thin client to a server" use case above, or the Framework 12 where you will add a SO-DIMM.
+- **Intel "Core 5/7 3xx" (Wildcat Lake) at $900+.** It's a $600–800 chip. Above that, Ryzen AI 300, Lunar Lake, or a refurb Mac is a different class of machine for the same money.
 - **Intel Core i3/i5 "N" series, Celeron, Pentium**, and any 12th-gen-or-older Intel U-series in a *new* machine.
 - **1366×768 or 1920×1080 16:9 TN panels.** **eMMC storage.**
 - **"Gaming" laptops under $700** — the same compromises plus a GTX-class GPU and a 45-minute battery.
@@ -1512,7 +1530,7 @@ New MacBook Airs live here after the June price increase, alongside the best Win
 - **Apple MacBook Air M4 15" refurb, 24 GB** — $1,100–1,300. Same argument as Tier 2, bigger screen.
 
 ### Avoid in this tier
-- **MacBook Pro 14" M5 base at $1,999** — over budget *and* rumored to be replaced by M6 this fall. Wait or buy refurb.
+- **MacBook Pro 14" M5 base at $1,999** — over budget *and* due to be replaced by the (now-announced) M6 late this year. Wait or buy refurb.
 - Thin Windows machines with 16 GB soldered at $1,300+ — insist on 32 GB at this price, or buy the Air.
 - Anything with Intel Arrow Lake H or 14th-gen Core in a thin chassis.
 
@@ -1525,7 +1543,7 @@ At this tier you're buying sustained performance, a better display, more memory,
 
 ### 🥇 Pick: Apple MacBook Pro 14" M5 (2025) — $1,999 (16/1 TB) · $2,199 (24/1 TB) · $2,399 (32/1 TB) — **but wait if you can**
 - **What:** M5 (10-core CPU/GPU), 16–32 GB at 153 GB/s, **1 TB base**, 14.2" **mini-LED 3024×1964, 1,000 nits SDR / 1,600 HDR, ProMotion 120 Hz**, 3× TB4 + HDMI 2.1 + SDXC + MagSafe 3, 72.4 Wh, 1.55 kg, six speakers, 12 MP camera, Wi-Fi 6E, fan-cooled (sustains ~10–15% more than the Air in long loads), space black or silver, nano-texture +$150.
-- **The catch:** MacRumors (Sep 2026): "not a good time to buy" — the base 14" is expected to move to an **M6 (2 nm) chip in fall 2026**. Rumor, but well-sourced. If you need it in September, buy **Apple Certified Refurbished** (~15% off, available since April 2026) rather than new; if you can wait to November, do.
+- **The catch:** the **M6 chip is now official** — Apple announced it in the Mac mini on August 25, 2026 (12-core CPU, 170 GB/s, ships September 22) — and Bloomberg/MacRumors report the base 14" MacBook Pro gets it in **late 2026** (it did not appear at the September 9 event). MacRumors' buyer's guide: "not a good time to buy." If you need it in September, buy **Apple Certified Refurbished** (~15% off, available since April 2026) rather than new; if you can wait to November–December, do. Expect the M6 model to hold the $1,999 price and to gain Wi-Fi 7.
 - **Pros:** The best display on any laptop (Chapter 6); the best speakers; real ports; the quietest sustained-performance machine; 16 h web / 24 h video claims (≈12–14 h real); everything the Air does, with headroom.
 - **Cons:** $700 more than an Air with the same chip; 1.55 kg; imminent replacement; Wi-Fi 6E not 7 on the base M5 model; TB4 not TB5.
 - **Config:** 24/1 TB ($2,199) is the sensible one. **Who:** Engineers who want the Pro display/ports/speakers but don't need Pro-chip multi-core; students who game on a Mac (M5 GPU + ProMotion).
@@ -1556,7 +1574,7 @@ At this tier you're buying sustained performance, a better display, more memory,
 ### Avoid in this tier
 - **16 GB anything.** At $1,500+ there is no excuse.
 - **Thin 14" laptops with RTX 5070 at 60–80 W TGP** — you pay for a GPU that throttles to 5060 performance while ruining battery and noise.
-- **Buying a new base M5 MacBook Pro in Sep–Oct 2026** without checking whether the M6 has landed.
+- **Buying a new base M5 MacBook Pro in Sep–Nov 2026** at full price. The M6 chip exists; the MacBook Pro version is months away at most.
 
 
 ---
@@ -1603,7 +1621,7 @@ Above $2,200, you should be buying to solve a specific problem: sustained multi-
 | < $700 | Used ThinkPad T14 Gen 3/4 (32 GB) | HP OmniBook 5 14 (X Plus) | Used ThinkPad T14 AMD | — (don't) | Corporate-refresh ThinkPads |
 | $700–1,000 | **Refurb MacBook Air M4 16 GB** | ThinkPad T14/T14s Gen 6 AMD | ThinkPad T14 Gen 6 AMD / Framework 13 (Ryzen) | LOQ 15 RTX 5060 (only if needed) | Apple Certified Refurbished |
 | $1,000–1,500 | **MacBook Air M5 24 GB** | X1 Carbon Gen 13/14 · Surface Laptop 8 · OmniBook Ultra 14 | Framework 13 Pro · T14s Gen 7 AMD | Legion 5i Gen 10 | Buy Windows on sale, never list |
-| $1,500–2,200 | MacBook Pro 14 M5 (refurb / wait for M6) | Dell XPS 14 (2026) · Legion Pro 5i | ThinkPad P14s Gen 7 AMD | **Zephyrus G14 (2026)** | Refurb M5 MBP |
+| $1,500–2,200 | MacBook Pro 14 M5 (refurb now / M6 late 2026) | Dell XPS 14 (2026) · Legion Pro 5i | ThinkPad P14s Gen 7 AMD | **Zephyrus G14 (2026)** | Refurb M5 MBP |
 | $2,200+ | **MacBook Pro 14/16 M5 Pro 48 GB** | XPS 16 · Blade 16 | ThinkPad P1 Gen 8 · Framework 16 | Zephyrus G16 5070 Ti/5080 · P1 Gen 8 | Employer pays |
 
 
@@ -1744,7 +1762,7 @@ The same machine can cost $1,400 or $2,139 depending on when, where, and how you
 
 ## 15.1 The 2026 caveat: prices are rising, not falling
 
-In a normal year the advice is "wait for Black Friday." In 2026, DRAM and NAND costs are still climbing, OEMs have announced further increases for H2, and Apple already raised prices once. Sales still happen — Lenovo and Dell discount weekly, Apple's refurb store restocks constantly — but the *baseline* moves up. Practical translation:
+In a normal year the advice is "wait for Black Friday." In 2026, DRAM and NAND costs are still climbing, OEMs have announced further increases for H2 (HP said so explicitly on August 26, calling price rises its "last lever" after cutting configurations), and Apple already raised prices once. Sales still happen — Lenovo and Dell discount weekly, Apple's refurb store restocks constantly — but the *baseline* moves up. Practical translation:
 
 - If you find the right configuration at a fair price, buy it. Don't wait for a hypothetical better deal.
 - Prior-generation and refurbished stock is the exception — it's priced off old costs and *is* the deal.
@@ -1787,13 +1805,13 @@ Ranked by trustworthiness:
 | When | What | Notes |
 |---|---|---|
 | **Now → Sep 24, 2026** | Apple Back to School gift cards | Last chance for the +$100/$150. |
-| **Sep–Oct** | Windows OEM back-to-school clearances; new-model launches (Panther Lake refreshes, Surface, Apple October event) | Prior-gen discounts deepen as new SKUs land. Apple October event likely brings **M6 base MacBook Pro** (rumor). |
+| **Sep–Oct** | Windows OEM back-to-school clearances; new-model launches (Panther Lake refreshes, Surface, Apple October event) | Prior-gen discounts deepen as new SKUs land. Apple's September 9 event was iPhone-only; an **M6 base MacBook Pro** (chip already announced) is reported for Oct–Dec via press release or a second event. RTX Spark laptops start appearing in October, prices unknown. |
 | **Early–mid Oct** | Amazon Prime Big Deal Days | Laptops discounted, especially Asus/Acer/Lenovo consumer. |
 | **Late Nov** | Black Friday / Cyber Monday | Best Windows laptop prices of the year historically; Apple retailers (Amazon, Best Buy, B&H) discount MacBooks $100–300; Apple itself gives gift cards. In 2026, expect *less* dramatic cuts on new stock due to component costs. |
 | **Dec 26 – Jan** | Post-holiday / Boxing Day (CA/UK/AU) | Clearance of holiday stock. |
 | **Early Jan** | CES announcements → prior-gen clearance | New chips announced; 2026 models drop in price through Feb–Mar as 2027 models ship. |
 | **Mar–Apr** | Apple spring updates (Air historically) | New Air → refurb prior Air. |
-| **May–Jun** | Computex; Memorial Day sales; Apple WWDC (software) | Nvidia N1X laptops may land in volume around here in 2027. |
+| **May–Jun** | Computex; Memorial Day sales; Apple WWDC (software) | Nvidia RTX Spark (N1X) laptops should be in volume and reviewed by here in 2027; M6 MacBook Air expected in spring 2027. |
 | **Jul** | Prime Day; Apple Back to School begins | — |
 | **Always** | Lenovo.com and Dell.com weekly sales; Apple refurb restocks | Check prices with a tracker (camelcamelcamel, Honey, Slickdeals). |
 
@@ -2070,7 +2088,7 @@ Drops and spills are the #1 student laptop death. AppleCare+ or Lenovo/Dell ADP 
 It will not be a good experience in 2026. (Chapters 3, 4.)
 
 **12. Buying the base M5 MacBook Pro 14" in September–October 2026 at full price.**
-An M6 refresh is widely expected this fall. Buy refurb or wait. (Chapter 13.)
+The M6 chip was announced in August (Mac mini) and the 14" MacBook Pro is reported to get it in late 2026. Buy refurb or wait. (Chapter 13.)
 
 **13. Never trying the keyboard.**
 Ten minutes in a store prevents four years of resentment. (Chapter 7.)
@@ -2094,7 +2112,7 @@ Set a charge limit when docked. Your battery will thank you in year three. (Chap
 Asus/Acer/MSI make good hardware and have mail-in-only, slow service. Fine if you have a spare or can wait three weeks; not fine before finals.
 
 **20. Waiting for the perfect next thing.**
-There's always an M6, an N1X, an OLED redesign around the corner. If you need a laptop for this semester, the 2026 machines are excellent. Buy and use it.
+There's always an M6 MacBook, an RTX Spark laptop, an OLED redesign around the corner. If you need a laptop for this semester, the 2026 machines are excellent. Buy and use it. (The one exception where waiting is rational — the base M5 MacBook Pro — is called out explicitly in Chapter 13.)
 
 ## 18.2 The myths
 
@@ -2155,13 +2173,16 @@ For most students, yes, for most of the degree. It gets tight with Android Studi
 It's an excellent $599–699 laptop with an 8 GB hard cap. It handles Python/JS/Java in VS Code and a browser. It struggles with Docker + a heavy IDE, Android Studio, or ML notebooks. If your heavy work happens on a university server or cloud dev box, it's fine. Otherwise stretch to a refurb M4 Air 16 GB.
 
 **Q: MacBook Air or MacBook Pro?**
-Air, unless you specifically want the mini-LED 120 Hz display, six speakers, HDMI/SD ports, or sustained multi-core for long builds (M5 Pro). The base M5 Pro-chassis machine is $700 more than an Air with the same chip. And the base 14" MBP is rumored to get an M6 this fall — wait or buy refurb.
+Air, unless you specifically want the mini-LED 120 Hz display, six speakers, HDMI/SD ports, or sustained multi-core for long builds (M5 Pro). The base M5 Pro-chassis machine is $700 more than an Air with the same chip. And the base 14" MBP is due to get the (already-announced) M6 chip in late 2026 — wait or buy refurb.
 
 **Q: 13" or 15" Air?**
 15" if it's your primary screen and you don't walk much; 13" if you carry it all day and dock at a desk. Same chip, same ports; the 15" has six speakers and a bigger battery, and weighs 270 g more.
 
 **Q: Should I wait for the M6 / Nvidia N1X / OLED MacBook?**
-Wait for M6 only if you specifically want the base 14" MacBook Pro (expected fall 2026). Don't wait for N1X (limited 2026 availability, first-gen platform) or the OLED MacBook (late 2026–2027 and premium-priced) unless you have no deadline.
+The M6 is real (Mac mini, August 2026). Wait for it only if you specifically want the base 14" MacBook Pro (M6 version reported for late 2026). Don't wait for an M6 Air (early 2027), for RTX Spark / N1X (laptops announced at IFA with no prices; volume in 2027; first-gen platform), or for the OLED "MacBook Ultra" (late 2026–early 2027, premium-priced, M5 Pro/Max inside) unless you have no deadline.
+
+**Q: Is a used Intel MacBook a good cheap option?**
+No. macOS 27 (fall 2026) drops every Intel Mac, and macOS 27 is also the last version with Rosetta 2. A 2019–2020 Intel MacBook Pro is a dead-end machine for a four-year degree. A used M1 Air with 16 GB (~$450–550) is the cheap Mac to buy instead.
 
 **Q: Can I run Windows on a Mac for that one course?**
 Windows 11 Arm runs in Parallels/VMware Fusion/UTM well for Office, Visual Studio (Arm build), and light tools. It cannot run x86-only engineering software (Vivado, Altium, SolidWorks) acceptably. Bootcamp is gone. If a Windows-only tool is central to your program, buy a Windows laptop.
@@ -2343,6 +2364,11 @@ There aren't any. This guide has no sponsor. Buy wherever is cheapest with a goo
 - MacRumors — Back to School 2026 promotion (Jul 16, extended Aug 11 to Sep 24 2026). Macworld — Back to School 2026 (Aug 26 2026).
 - Gizmodo (Jul 20 2026), refurb.me (Aug 14 2026), RedFlagDeals — refurbished M4 Air pricing.
 
+**September 10, 2026 fact-check pass (v1.1)**
+- Apple Newsroom — "Apple unveils a more powerful Mac mini featuring the all-new M6 and M5 Pro" (Aug 25 2026); AppleInsider — M6 Mac mini vs M4 Mac mini (Aug 25 2026). MacRumors — Upcoming Apple Products guide (Aug 28 2026); "macOS Golden Gate Is the Last to Support Intel Apps" (Jun 10 2026). 9to5Mac — macOS Golden Gate compatible Macs (Jun 8 2026); "Apple tells Mac App Store developers they can now drop Intel support" (Sep 1 2026). Mashable / CNBC — Sep 9 2026 "Surprise and shine" event coverage (iPhone 18 Pro, iPhone Duo; no Macs).
+- PCMag — "Not Again: HP Says More Price Hikes Are Coming, Blames Memory Shortage" (Aug 27 2026); Dell XPS 13 (2026) review (Editors' Choice, 8 GB / Wildcat Lake); "I Tested a New Intel Wildcat Lake CPU" (Core 7 350, IdeaPad 3 Gen 11); "Framework Refreshes 12-Inch Laptop, Uses Linux to Hit $699 Price" (Sep 2026). Exceldisc — DRAM contract price analysis (Aug 26 2026).
+- PC Guide — RTX Spark laptops and mini desktops from Acer, Asus, Lenovo at IFA Berlin 2026 (Sep 4 2026); The Desk Brief — RTX Spark laptop tracker (updated Sep 2 2026); Nvidia newsroom (May 31 2026); Asus / Lenovo IFA press releases (ProArt P14/P16 spec sheets; Yoga Pro 9n / Yoga 9n).
+
 **Silicon**
 - Ars Technica — "Intel Panther Lake Core Ultra review: Intel's best laptop CPU in a very long time" (Feb 2 2026).
 - Club386 — Core Ultra Series 3 / X9 388H benchmarks (Jan 26 2026). Ultrabookreview — complete Panther Lake laptop list.
@@ -2377,6 +2403,8 @@ There aren't any. This guide has no sponsor. Buy wherever is cheapest with a goo
 ## 21.3 Changelog
 
 - **2026-09-06 — v1.0.** Initial publication. Written from a September 2026 vantage point covering Apple M5 family, Intel Core Ultra Series 3, AMD Ryzen AI 300/400 and Strix Halo, Qualcomm Snapdragon X2, Nvidia N1X (announced), the 2025–26 memory shortage and its price effects, Apple's June 2026 price increase, and the Back to School 2026 promotion ending September 24.
+
+- **2026-09-10 — v1.1.** Fact-check and expansion pass. **Apple M6 is announced** (Mac mini, Aug 25; ships Sep 22) — all "M6 rumor" language replaced with announced-chip / laptop-timing-still-reported wording (base MBP 14" late 2026, Air early 2027, no M6 Pro/Max). Sep 9 Apple event noted (no Macs). Added macOS 27 Golden Gate consequences (Intel Macs dropped; last release with Rosetta 2) to Chapters 3, 4, 19. Added Intel **Wildcat Lake / "Core Series 3 without Ultra"** naming-trap section and decoder-ring entry (Ch. 4). Added **Dell XPS 13 (2026)** and **Framework Laptop 12 (2026)** to Tier 1 with 8 GB warnings (Ch. 13); new TL;DR paragraph on the $699/8 GB class. RTX Spark: replaced speculation with the IFA product list and "no prices yet" status (Ch. 4, 12, 15, 19). HP Aug 26 earnings-call price guidance added (Ch. 5, 15). Comparison data: XPS 13 and Framework 12 added. Web: mobile header fix, in-chapter table of contents, search, side-by-side compare, shareable finder results, local marked.js, 404 page, sitemap.
 
 ## 21.4 How to update this guide
 

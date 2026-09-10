@@ -10,13 +10,16 @@ For most students, yes, for most of the degree. It gets tight with Android Studi
 It's an excellent $599–699 laptop with an 8 GB hard cap. It handles Python/JS/Java in VS Code and a browser. It struggles with Docker + a heavy IDE, Android Studio, or ML notebooks. If your heavy work happens on a university server or cloud dev box, it's fine. Otherwise stretch to a refurb M4 Air 16 GB.
 
 **Q: MacBook Air or MacBook Pro?**
-Air, unless you specifically want the mini-LED 120 Hz display, six speakers, HDMI/SD ports, or sustained multi-core for long builds (M5 Pro). The base M5 Pro-chassis machine is $700 more than an Air with the same chip. And the base 14" MBP is rumored to get an M6 this fall — wait or buy refurb.
+Air, unless you specifically want the mini-LED 120 Hz display, six speakers, HDMI/SD ports, or sustained multi-core for long builds (M5 Pro). The base M5 Pro-chassis machine is $700 more than an Air with the same chip. And the base 14" MBP is due to get the (already-announced) M6 chip in late 2026 — wait or buy refurb.
 
 **Q: 13" or 15" Air?**
 15" if it's your primary screen and you don't walk much; 13" if you carry it all day and dock at a desk. Same chip, same ports; the 15" has six speakers and a bigger battery, and weighs 270 g more.
 
 **Q: Should I wait for the M6 / Nvidia N1X / OLED MacBook?**
-Wait for M6 only if you specifically want the base 14" MacBook Pro (expected fall 2026). Don't wait for N1X (limited 2026 availability, first-gen platform) or the OLED MacBook (late 2026–2027 and premium-priced) unless you have no deadline.
+The M6 is real (Mac mini, August 2026). Wait for it only if you specifically want the base 14" MacBook Pro (M6 version reported for late 2026). Don't wait for an M6 Air (early 2027), for RTX Spark / N1X (laptops announced at IFA with no prices; volume in 2027; first-gen platform), or for the OLED "MacBook Ultra" (late 2026–early 2027, premium-priced, M5 Pro/Max inside) unless you have no deadline.
+
+**Q: Is a used Intel MacBook a good cheap option?**
+No. macOS 27 (fall 2026) drops every Intel Mac, and macOS 27 is also the last version with Rosetta 2. A 2019–2020 Intel MacBook Pro is a dead-end machine for a four-year degree. A used M1 Air with 16 GB (~$450–550) is the cheap Mac to buy instead.
 
 **Q: Can I run Windows on a Mac for that one course?**
 Windows 11 Arm runs in Parallels/VMware Fusion/UTM well for Office, Visual Studio (Arm build), and light tools. It cannot run x86-only engineering software (Vivado, Altium, SolidWorks) acceptably. Bootcamp is gone. If a Windows-only tool is central to your program, buy a Windows laptop.
