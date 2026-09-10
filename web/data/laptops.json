@@ -1,8 +1,9 @@
 {
  "meta": {
-  "updated": "2026-09-06",
+  "updated": "2026-09-10",
   "currency": "USD",
-  "note": "Prices are US, Sep 2026, realistic sale/refurb prices for the recommended config unless noted. Volatile due to the 2025-26 memory shortage. Ratings are the guide's editorial 1-5 assessments."
+  "note": "Prices are US, Sep 2026, realistic sale/refurb prices for the recommended config unless noted. Volatile due to the 2025-26 memory shortage. Ratings are the guide's editorial 1-5 assessments.",
+  "version": "1.1"
  },
  "laptops": [
   {
@@ -343,6 +344,97 @@
    "pros": "Apple build at $599 edu; macOS; fast single-core; silent",
    "cons": "8 GB with no 16 GB option — struggles with Docker + IDE; one ext display; weaker camera/gamut",
    "verdict": "Great laptop, wrong RAM for CS. Stretch to a refurb M4 Air."
+  },
+  {
+   "id": "xps13-2026",
+   "name": "Dell XPS 13 (2026, Wildcat Lake)",
+   "brand": "Dell",
+   "os": [
+    "Windows",
+    "Linux"
+   ],
+   "chip": "Intel Core 5 320 (Wildcat Lake, 2P+4LPE)",
+   "arch": "x86-64",
+   "ram": "8 GB (16 GB = $899)",
+   "recRam": "16 GB",
+   "storage": "512 GB",
+   "display": "13.4\" 2560x1600 IPS touch 120 Hz matte",
+   "weightKg": 1.0,
+   "batteryWh": 55,
+   "battRealH": "12-15",
+   "ports": "2x USB-C 10 Gbps (no TB4, no 3.5mm)",
+   "gpu": "integrated (tiny)",
+   "price": 699,
+   "recPrice": 899,
+   "tier": 2,
+   "linux": 3,
+   "keyboard": 3,
+   "displayScore": 4,
+   "battery": 5,
+   "build": 5,
+   "repair": 2,
+   "sustained": 2,
+   "noise": 5,
+   "personas": [
+    "freshman",
+    "nomad",
+    "parent"
+   ],
+   "tags": [
+    "8gb-warning",
+    "budget",
+    "1kg",
+    "no-headphone-jack"
+   ],
+   "pros": "All-aluminum 1.0 kg; 1600p 120 Hz touch; 20+ h video; PCMag Editors' Choice budget Windows; edu -$100",
+   "cons": "8 GB base; budget 6-thread chip; no headphone jack; no Thunderbolt; dim-ish matte panel; 16 GB pushes to $899",
+   "verdict": "Lovely lecture machine. For CS only the 16 GB ($899) — and at $899 a refurb M4 Air is faster."
+  },
+  {
+   "id": "fw12-2026",
+   "name": "Framework Laptop 12 (2026, Wildcat Lake)",
+   "brand": "Framework",
+   "os": [
+    "Linux",
+    "Windows"
+   ],
+   "chip": "Intel Core 3 304 / Core 5 320 / Core 7 350 (Wildcat Lake)",
+   "arch": "x86-64",
+   "ram": "8 GB (16 GB = $1,099); DDR5 SO-DIMM",
+   "recRam": "16 GB",
+   "storage": "512 GB+ (M.2 2230)",
+   "display": "12.2\" 1920x1200 IPS touch convertible",
+   "weightKg": 1.3,
+   "batteryWh": 50,
+   "battRealH": "8-10",
+   "ports": "4x expansion cards (TB4 on rear)",
+   "gpu": "integrated (tiny)",
+   "price": 699,
+   "recPrice": 1099,
+   "tier": 2,
+   "linux": 5,
+   "keyboard": 3,
+   "displayScore": 3,
+   "battery": 3,
+   "build": 3,
+   "repair": 5,
+   "sustained": 2,
+   "noise": 4,
+   "personas": [
+    "linux",
+    "freshman",
+    "ee-ce"
+   ],
+   "tags": [
+    "repairable",
+    "upgradeable-ram",
+    "8gb-warning",
+    "ships-oct-2026",
+    "linux-first"
+   ],
+   "pros": "10/10 repairable; SO-DIMM RAM (8 GB isn't a dead end); Fedora preload; TB4; Wi-Fi 7; $549 DIY",
+   "cons": "Slow budget chip; plastic; small 12\" screen; 16 GB prebuilt is $1,099; ships October",
+   "verdict": "Best repairable Linux laptop under $700 — buy DIY or add RAM yourself."
   },
   {
    "id": "x1c-g14",
