@@ -1,0 +1,170 @@
+[
+  {
+    "file": "00-intro.md",
+    "title": "The Definitive Laptop Guide for CS Students & Software Engineers (September 2026 Edition)",
+    "short": "Introduction & TL;DR",
+    "words": 1639
+  },
+  {
+    "file": "01-methodology.md",
+    "title": "Chapter 1 — Methodology: What \"Best\" Means Here",
+    "short": "Methodology: What \"Best\" Means Here",
+    "words": 1356
+  },
+  {
+    "file": "02-what-dev-work-demands.md",
+    "title": "Chapter 2 — What Software Development Actually Demands From Hardware",
+    "short": "What Software Development Actually Demands From Hardware",
+    "words": 2776
+  },
+  {
+    "file": "03-operating-systems.md",
+    "title": "Chapter 3 — Operating Systems: macOS vs. Windows vs. Linux for Developers",
+    "short": "Operating Systems: macOS vs. Windows vs. Linux for Developers",
+    "words": 3232
+  },
+  {
+    "file": "04-silicon.md",
+    "title": "Chapter 4 — Silicon: The 2026 Laptop Chip Landscape Explained",
+    "short": "Silicon: The 2026 Laptop Chip Landscape Explained",
+    "words": 3992
+  },
+  {
+    "file": "05-memory-and-storage.md",
+    "title": "Chapter 5 — Memory and Storage: Buying Decisions in a Shortage Year",
+    "short": "Memory and Storage: Buying Decisions in a Shortage Year",
+    "words": 1700
+  },
+  {
+    "file": "06-display.md",
+    "title": "Chapter 6 — Display: Eight Hours a Day of Staring",
+    "short": "Display: Eight Hours a Day of Staring",
+    "words": 1898
+  },
+  {
+    "file": "07-keyboard-trackpad-av.md",
+    "title": "Chapter 7 — Keyboard, Trackpad, Webcam, Speakers, and Microphones",
+    "short": "Keyboard, Trackpad, Webcam, Speakers, and Microphones",
+    "words": 1412
+  },
+  {
+    "file": "08-battery-and-efficiency.md",
+    "title": "Chapter 8 — Battery Life, Efficiency, and Charging",
+    "short": "Battery Life, Efficiency, and Charging",
+    "words": 1667
+  },
+  {
+    "file": "09-ports-and-connectivity.md",
+    "title": "Chapter 9 — Ports, Connectivity, Docking, and External Displays",
+    "short": "Ports, Connectivity, Docking, and External Displays",
+    "words": 1399
+  },
+  {
+    "file": "10-thermals-and-noise.md",
+    "title": "Chapter 10 — Thermals, Noise, and Sustained Performance",
+    "short": "Thermals, Noise, and Sustained Performance",
+    "words": 1424
+  },
+  {
+    "file": "11-build-repair-warranty-linux.md",
+    "title": "Chapter 11 — Build Quality, Repairability, Warranty, Longevity, and Linux Compatibility",
+    "short": "Build Quality, Repairability, Warranty, Longevity, and Linux Compatibility",
+    "words": 1681
+  },
+  {
+    "file": "12-discrete-gpu.md",
+    "title": "Chapter 12 — Do You Need a Discrete GPU?",
+    "short": "Do You Need a Discrete GPU?",
+    "words": 1693
+  },
+  {
+    "file": "13a-picks-tier1.md",
+    "title": "Chapter 13 — The Picks, by Budget",
+    "short": "Picks by budget · Tier 1 · < $700",
+    "words": 1393
+  },
+  {
+    "file": "13b-picks-tier2.md",
+    "title": "Tier 2 — $700–1,000: \"The value sweet spot\"",
+    "short": "Tier 2 · $700–1,000",
+    "words": 852
+  },
+  {
+    "file": "13c-picks-tier3.md",
+    "title": "Tier 3 — $1,000–1,500: \"The mainstream recommendation\"",
+    "short": "Tier 3 · $1,000–1,500",
+    "words": 1059
+  },
+  {
+    "file": "13d-picks-tier4.md",
+    "title": "Tier 4 — $1,500–2,200: \"Professional tools\"",
+    "short": "Tier 4 · $1,500–2,200",
+    "words": 1135
+  },
+  {
+    "file": "13e-picks-tier5.md",
+    "title": "Tier 5 — $2,200 and up: \"Money is not the constraint\"",
+    "short": "Tier 5 · $2,200+ & summary",
+    "words": 1031
+  },
+  {
+    "file": "14a-personas-1.md",
+    "title": "Chapter 14 — The Picks, by Persona",
+    "short": "Picks by persona · 1–6",
+    "words": 952
+  },
+  {
+    "file": "14b-personas-2.md",
+    "title": "14.7 The Working Software Engineer (Web / Backend / Cloud)",
+    "short": "Picks by persona · 7–14",
+    "words": 1194
+  },
+  {
+    "file": "15-buying-strategy.md",
+    "title": "Chapter 15 — Buying Strategy: Paying Less for the Same Laptop",
+    "short": "Buying Strategy: Paying Less for the Same Laptop",
+    "words": 1591
+  },
+  {
+    "file": "15b-spec-sheet-decoder.md",
+    "title": "15.8 The spec-sheet decoder: a one-page checklist for any listing",
+    "short": "Spec-sheet decoder (checklist)",
+    "words": 1245
+  },
+  {
+    "file": "16-setup-guide.md",
+    "title": "Chapter 16 — Day-One Setup: A Developer's Environment on Each OS",
+    "short": "Day-One Setup: A Developer's Environment on Each OS",
+    "words": 1549
+  },
+  {
+    "file": "17-accessories-ergonomics.md",
+    "title": "Chapter 17 — Accessories and Ergonomics: What's Actually Worth Buying",
+    "short": "Accessories and Ergonomics: What's Actually Worth Buying",
+    "words": 1217
+  },
+  {
+    "file": "18-mistakes-and-myths.md",
+    "title": "Chapter 18 — Common Mistakes and Persistent Myths",
+    "short": "Common Mistakes and Persistent Myths",
+    "words": 1344
+  },
+  {
+    "file": "19-faq.md",
+    "title": "Chapter 19 — Frequently Asked Questions",
+    "short": "Frequently Asked Questions",
+    "words": 1344
+  },
+  {
+    "file": "20-glossary.md",
+    "title": "Chapter 20 — Glossary",
+    "short": "Glossary",
+    "words": 943
+  },
+  {
+    "file": "21-sources-and-changelog.md",
+    "title": "Chapter 21 — Sources, Caveats, and Changelog",
+    "short": "Sources, Caveats, and Changelog",
+    "words": 1243
+  }
+]

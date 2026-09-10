@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Redirecting… — Laptop Guide for CS & SWE</title>
+<script>
+// GitHub Pages serves this for unknown paths. Map /laptop-research/<anything> to the SPA hash router.
+(function(){var parts=location.pathname.split('/');var base='/'+(parts[1]||'')+'/';if(parts.length<3){base='/';}
+var rest=location.pathname.slice(base.length).replace(/\/$/,'');
+var target=base+(rest?'#/'+(/^\d\d/.test(rest)?'ch/'+rest+(rest.endsWith('.md')?'':'.md'):rest):'');
+location.replace(target+location.search+location.hash);})();
+</script></head><body style="font-family:system-ui;padding:2em;background:#0f1115;color:#e6e8ee"><p>Not found. Redirecting to <a style="color:#7aa2ff" href="./">the guide</a>…</p></body></html>
