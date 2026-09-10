@@ -1,0 +1,26 @@
+name: Validate guide and data
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: Rebuild and check the generated files are committed
+        run: |
+          chmod +x scripts/build.sh
+          SKIP_VALIDATE=1 ./scripts/build.sh
+          git diff --exit-code -- GUIDE.md web/content || { echo "::error::GUIDE.md / web/content out of date — run scripts/build.sh and commit"; exit 1; }
+      - name: validate.py (schema, cross-refs, TOC anchors, finder scenarios)
+        run: python3 scripts/validate.py
+      - name: Headless browser QA (console errors, overflow)
+        run: |
+          pip install playwright && python3 -m playwright install --with-deps chromium
+          (cd web && python3 -m http.server 8080 &) ; sleep 1
+          python3 scripts/qa.py

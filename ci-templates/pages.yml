@@ -19,7 +19,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Build GUIDE.md + web content
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: Build GUIDE.md + web content (runs scripts/validate.py)
         run: |
           chmod +x scripts/build.sh
           ./scripts/build.sh
