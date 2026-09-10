@@ -64,4 +64,18 @@ pathlib.Path("web/content/manifest.json").write_text(json.dumps(manifest, indent
 print(f"manifest: {len(manifest)} chapters, {sum(c['words'] for c in manifest)} words")
 PY
 
+# --- 3. Sitemap (static routes + one entry per chapter) ------------------------
+python3 - <<'PY'
+import json, datetime
+man = json.load(open("web/content/manifest.json"))
+base = "https://gorg667.github.io/laptop-research/"
+today = datetime.date.today().isoformat()
+urls = [base, base + "#/compare", base + "#/finder", base + "#/about"] + [base + "#/ch/" + c["file"] for c in man] + [base + "GUIDE.md"]
+xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(f"  <url><loc>{u}</loc><lastmod>{today}</lastmod></url>\n" for u in urls) + "</urlset>\n"
+open("web/sitemap.xml", "w").write(xml)
+PY
+
 echo "built $OUT ($(wc -w < "$OUT") words)"
+
+# --- 4. Validate (schema, manifest sync, TOC anchors, finder scenarios) -------
+if [[ "${SKIP_VALIDATE:-}" != "1" ]]; then python3 scripts/validate.py | tail -1; fi
