@@ -4,7 +4,7 @@ The same machine can cost $1,400 or $2,139 depending on when, where, and how you
 
 ## 15.1 The 2026 caveat: prices are rising, not falling
 
-In a normal year the advice is "wait for Black Friday." In 2026, DRAM and NAND costs are still climbing, OEMs have announced further increases for H2, and Apple already raised prices once. Sales still happen — Lenovo and Dell discount weekly, Apple's refurb store restocks constantly — but the *baseline* moves up. Practical translation:
+In a normal year the advice is "wait for Black Friday." In 2026, DRAM and NAND costs are still climbing, OEMs have announced further increases for H2 (HP said so explicitly on August 26, calling price rises its "last lever" after cutting configurations), and Apple already raised prices once. Sales still happen — Lenovo and Dell discount weekly, Apple's refurb store restocks constantly — but the *baseline* moves up. Practical translation:
 
 - If you find the right configuration at a fair price, buy it. Don't wait for a hypothetical better deal.
 - Prior-generation and refurbished stock is the exception — it's priced off old costs and *is* the deal.
