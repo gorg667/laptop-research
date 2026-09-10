@@ -129,7 +129,7 @@
       <div class="hero">
         <h1>The Definitive Laptop Guide for CS Students &amp; Software Engineers</h1>
         <p class="lead">September 2026 edition (v1.1, fact-checked Sep 10) · ${Math.round(total / 1000)},000+ words · ${man.length} chapters · independent, no affiliate links.</p>
-        <div class="btns"><a class="primary" href="#/finder">🎯 Answer 5 questions → get a pick</a><a href="#/compare">🔎 Compare ${lap.laptops.length} laptops</a><a href="#/ch/${man[0].file}">📖 Start reading</a><a href="#/search">🔍 Search</a></div>
+        <div class="btns"><a class="primary" href="#/finder">🎯 Answer 5 questions → get a pick</a><a href="#/compare">🔎 Compare ${lap.laptops.length} laptops</a><a href="#/ch/${man[0].file}">📖 Start reading</a><a href="#/ch/15b-spec-sheet-decoder.md">✅ Spec-sheet checklist</a><a href="#/search">🔍 Search</a></div>
       </div>
       <h2 style="border:0;margin-top:0">Quick picks</h2>
       <div class="cards">${QUICK_PICKS.map(([k, v, p, b, href]) => `<a class="card" href="${href}"><span class="badge ${b}">${k}</span><h3>${esc(v)}</h3><p class="price">${esc(p)}</p></a>`).join('')}</div>
