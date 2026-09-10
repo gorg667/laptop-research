@@ -2,7 +2,7 @@
 
 > **Who this is for:** anyone who writes code for a living or for a degree, and who wants *one* machine that handles coursework, professional software engineering, and everyday life — browsing, streaming, notes, calls, the occasional game — without compromise.
 >
-> **Vantage point:** written in early September 2026. Hardware, prices, and recommendations reflect that moment. Where something is a rumor rather than a fact, it is labeled as such. Where prices are quoted, they are **US MSRP in USD** unless stated otherwise, and they are *unusually volatile* this year for reasons explained in Chapter 1.
+> **Vantage point:** written in early September 2026 and fact-checked against the news through **September 10, 2026** (after Apple's September 9 event and IFA Berlin). Hardware, prices, and recommendations reflect that moment. Where something is a rumor rather than a fact, it is labeled as such. Where prices are quoted, they are **US MSRP in USD** unless stated otherwise, and they are *unusually volatile* this year for reasons explained in Chapter 1.
 
 ---
 
@@ -34,7 +34,9 @@ If you are in a hurry, read the TL;DR below, then jump to Chapter 13 (picks by b
 
 **Whatever you buy: get 16 GB of RAM minimum, 32 GB if you can, and never 8 GB.** In 2026, RAM is the one component you cannot fix later on most laptops and the one component whose price has gone crazy. 8 GB machines — including Apple's otherwise-lovely $599–699 **MacBook Neo** — will make Docker, IntelliJ, Android Studio, and a modern browser fight each other for air. The Neo is a great laptop for a history major; it is a bad laptop for a CS major.
 
-**Things to *wait* for, if you can:** the base 14" MacBook Pro is expected to move to an **M6 chip this fall (rumor)** — don't buy the M5 version at full price in September–October 2026. Nvidia's **N1X** Arm laptops are trickling out late in 2026 — exciting, but a first-generation platform; don't wait for them unless you specifically need Nvidia + Arm efficiency.
+**Things to *wait* for, if you can:** Apple's **M6 chip is now real** — it was announced August 25 in the Mac mini — and the base 14" MacBook Pro is widely reported to get it in **late 2026** (the September 9 event was iPhones only). Don't buy the M5 MacBook Pro 14" at full price this fall. The MacBook *Air* is not expected to get M6 until early 2027, so buying an M5 Air now is fine. Nvidia's **RTX Spark (N1X)** Arm laptops were shown at IFA in September with no prices and an October-ish launch — exciting, but a first-generation platform; don't wait for them unless you specifically need CUDA + Arm efficiency and can defer to 2027.
+
+**A cheap-laptop warning for 2026:** there is a new wave of good-looking **$699 laptops with 8 GB of RAM** — the MacBook Neo, the Dell XPS 13 (2026), the Framework Laptop 12 — built on iPhone-class or Intel "Wildcat Lake" chips. They are excellent machines *for other majors*. For CS, the 16 GB versions cost $100–400 more, and at that price a refurbished M4 MacBook Air or a used 32 GB ThinkPad is a better computer.
 
 ---
 

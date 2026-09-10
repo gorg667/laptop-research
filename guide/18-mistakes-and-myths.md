@@ -38,7 +38,7 @@ Drops and spills are the #1 student laptop death. AppleCare+ or Lenovo/Dell ADP 
 It will not be a good experience in 2026. (Chapters 3, 4.)
 
 **12. Buying the base M5 MacBook Pro 14" in September–October 2026 at full price.**
-An M6 refresh is widely expected this fall. Buy refurb or wait. (Chapter 13.)
+The M6 chip was announced in August (Mac mini) and the 14" MacBook Pro is reported to get it in late 2026. Buy refurb or wait. (Chapter 13.)
 
 **13. Never trying the keyboard.**
 Ten minutes in a store prevents four years of resentment. (Chapter 7.)
@@ -62,7 +62,7 @@ Set a charge limit when docked. Your battery will thank you in year three. (Chap
 Asus/Acer/MSI make good hardware and have mail-in-only, slow service. Fine if you have a spare or can wait three weeks; not fine before finals.
 
 **20. Waiting for the perfect next thing.**
-There's always an M6, an N1X, an OLED redesign around the corner. If you need a laptop for this semester, the 2026 machines are excellent. Buy and use it.
+There's always an M6 MacBook, an RTX Spark laptop, an OLED redesign around the corner. If you need a laptop for this semester, the 2026 machines are excellent. Buy and use it. (The one exception where waiting is rational — the base M5 MacBook Pro — is called out explicitly in Chapter 13.)
 
 ## 18.2 The myths
 

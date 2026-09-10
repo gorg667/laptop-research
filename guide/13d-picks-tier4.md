@@ -4,7 +4,7 @@ At this tier you're buying sustained performance, a better display, more memory,
 
 ### 🥇 Pick: Apple MacBook Pro 14" M5 (2025) — $1,999 (16/1 TB) · $2,199 (24/1 TB) · $2,399 (32/1 TB) — **but wait if you can**
 - **What:** M5 (10-core CPU/GPU), 16–32 GB at 153 GB/s, **1 TB base**, 14.2" **mini-LED 3024×1964, 1,000 nits SDR / 1,600 HDR, ProMotion 120 Hz**, 3× TB4 + HDMI 2.1 + SDXC + MagSafe 3, 72.4 Wh, 1.55 kg, six speakers, 12 MP camera, Wi-Fi 6E, fan-cooled (sustains ~10–15% more than the Air in long loads), space black or silver, nano-texture +$150.
-- **The catch:** MacRumors (Sep 2026): "not a good time to buy" — the base 14" is expected to move to an **M6 (2 nm) chip in fall 2026**. Rumor, but well-sourced. If you need it in September, buy **Apple Certified Refurbished** (~15% off, available since April 2026) rather than new; if you can wait to November, do.
+- **The catch:** the **M6 chip is now official** — Apple announced it in the Mac mini on August 25, 2026 (12-core CPU, 170 GB/s, ships September 22) — and Bloomberg/MacRumors report the base 14" MacBook Pro gets it in **late 2026** (it did not appear at the September 9 event). MacRumors' buyer's guide: "not a good time to buy." If you need it in September, buy **Apple Certified Refurbished** (~15% off, available since April 2026) rather than new; if you can wait to November–December, do. Expect the M6 model to hold the $1,999 price and to gain Wi-Fi 7.
 - **Pros:** The best display on any laptop (Chapter 6); the best speakers; real ports; the quietest sustained-performance machine; 16 h web / 24 h video claims (≈12–14 h real); everything the Air does, with headroom.
 - **Cons:** $700 more than an Air with the same chip; 1.55 kg; imminent replacement; Wi-Fi 6E not 7 on the base M5 model; TB4 not TB5.
 - **Config:** 24/1 TB ($2,199) is the sensible one. **Who:** Engineers who want the Pro display/ports/speakers but don't need Pro-chip multi-core; students who game on a Mac (M5 GPU + ProMotion).
@@ -35,4 +35,4 @@ At this tier you're buying sustained performance, a better display, more memory,
 ### Avoid in this tier
 - **16 GB anything.** At $1,500+ there is no excuse.
 - **Thin 14" laptops with RTX 5070 at 60–80 W TGP** — you pay for a GPU that throttles to 5060 performance while ruining battery and noise.
-- **Buying a new base M5 MacBook Pro in Sep–Oct 2026** without checking whether the M6 has landed.
+- **Buying a new base M5 MacBook Pro in Sep–Nov 2026** at full price. The M6 chip exists; the MacBook Pro version is months away at most.

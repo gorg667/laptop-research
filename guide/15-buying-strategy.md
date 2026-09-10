@@ -47,13 +47,13 @@ Ranked by trustworthiness:
 | When | What | Notes |
 |---|---|---|
 | **Now → Sep 24, 2026** | Apple Back to School gift cards | Last chance for the +$100/$150. |
-| **Sep–Oct** | Windows OEM back-to-school clearances; new-model launches (Panther Lake refreshes, Surface, Apple October event) | Prior-gen discounts deepen as new SKUs land. Apple October event likely brings **M6 base MacBook Pro** (rumor). |
+| **Sep–Oct** | Windows OEM back-to-school clearances; new-model launches (Panther Lake refreshes, Surface, Apple October event) | Prior-gen discounts deepen as new SKUs land. Apple's September 9 event was iPhone-only; an **M6 base MacBook Pro** (chip already announced) is reported for Oct–Dec via press release or a second event. RTX Spark laptops start appearing in October, prices unknown. |
 | **Early–mid Oct** | Amazon Prime Big Deal Days | Laptops discounted, especially Asus/Acer/Lenovo consumer. |
 | **Late Nov** | Black Friday / Cyber Monday | Best Windows laptop prices of the year historically; Apple retailers (Amazon, Best Buy, B&H) discount MacBooks $100–300; Apple itself gives gift cards. In 2026, expect *less* dramatic cuts on new stock due to component costs. |
 | **Dec 26 – Jan** | Post-holiday / Boxing Day (CA/UK/AU) | Clearance of holiday stock. |
 | **Early Jan** | CES announcements → prior-gen clearance | New chips announced; 2026 models drop in price through Feb–Mar as 2027 models ship. |
 | **Mar–Apr** | Apple spring updates (Air historically) | New Air → refurb prior Air. |
-| **May–Jun** | Computex; Memorial Day sales; Apple WWDC (software) | Nvidia N1X laptops may land in volume around here in 2027. |
+| **May–Jun** | Computex; Memorial Day sales; Apple WWDC (software) | Nvidia RTX Spark (N1X) laptops should be in volume and reviewed by here in 2027; M6 MacBook Air expected in spring 2027. |
 | **Jul** | Prime Day; Apple Back to School begins | — |
 | **Always** | Lenovo.com and Dell.com weekly sales; Apple refurb restocks | Check prices with a tracker (camelcamelcamel, Honey, Slickdeals). |
 
