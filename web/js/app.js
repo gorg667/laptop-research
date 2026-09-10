@@ -40,10 +40,11 @@
 
   // ---------- markdown ----------
   marked.setOptions({ gfm: true, breaks: false, headerIds: false, mangle: false });
-  const slug = s => s.toLowerCase().replace(/[^a-z0-9 -]/g, '').trim().replace(/ +/g, '-');
+  const decode = s => { const d = document.createElement('textarea'); d.innerHTML = s; return d.value; };
+  const slug = s => decode(s.replace(/<[^>]+>/g, '')).toLowerCase().replace(/[^a-z0-9 -]/g, '').trim().replace(/ +/g, '-');
   const renderer = new marked.Renderer();
   renderer.heading = (text, level) => {
-    const id = slug(text.replace(/<[^>]+>/g, ''));
+    const id = slug(text);
     return `<h${level} id="${id}">${text}${level === 2 || level === 3 ? ` <a class="anchor" href="#${location.hash.split('#')[1] || '/'}#${id}" aria-label="Link to section">#</a>` : ''}</h${level}>`;
   };
   renderer.link = (href, title, text) => {
