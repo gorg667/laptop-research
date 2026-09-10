@@ -83,6 +83,7 @@ For ML: Nvidia (CUDA). Full stop. AMD's ROCm on laptop Radeon dGPUs is not a rel
 - **Best premium:** **Razer Blade 16** (RTX 5080/5090, OLED 240 Hz) $2,400–4,000+ — the MacBook Pro of gaming laptops, with Razer's warranty reputation as the caveat.
 - **The unified-memory alternative:** **HP ZBook Ultra G1a** or **Asus ROG Flow Z13** (Ryzen AI Max+ 395, up to 128 GB) — if your GPU need is "run big models" rather than CUDA.
 - **The Apple alternative:** **MacBook Pro 14/16 with M5 Max (32/40-core GPU, 36–128 GB)** — for ML via MPS/MLX, local LLMs, Metal-based graphics, and Blender; not for CUDA or Unreal.
+- **The 2027 wildcard — Nvidia RTX Spark (N1X):** an Arm laptop platform with a Blackwell GPU (6,144 CUDA cores, RTX 5070-class) and up to 128 GB unified memory — i.e., CUDA *plus* Mac-style big memory in one thin machine. Announced designs (Asus ProArt P14/P16, Lenovo Yoga Pro 9n, Dell XPS 16 Creator, Surface Laptop Ultra, HP OmniBook Ultra 16) are creator-class with OLED panels and 90–100 Wh batteries; **no prices or reviews exist as of September 10, 2026**, launch is October-ish with volume in 2027, and Windows-on-Arm plus first-gen drivers are real risks. If your GPU need is specifically "CUDA for ML" and you can wait until reviews land, it's the platform to watch. If you need a laptop this semester, don't wait (Chapter 4 §4.6).
 
 ## 12.6 The desktop + laptop strategy
 
