@@ -97,3 +97,5 @@ Ranked by trustworthiness:
 9. Price: compared across Apple edu/refurb, OEM sale + student store, Best Buy open-box, Back Market.
 10. Warranty/ADP decided; return window noted (14 days Apple; 30 days Best Buy for members; Lenovo/Dell 30 days).
 11. Bought with a credit card that adds warranty/purchase protection.
+
+For reading an individual listing line by line — which chip family is that, is that panel any good, is 5 Gb/s USB-C acceptable — use the spec-sheet decoder in §15.8 that follows.

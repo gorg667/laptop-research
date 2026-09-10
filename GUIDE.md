@@ -1857,6 +1857,8 @@ Ranked by trustworthiness:
 10. Warranty/ADP decided; return window noted (14 days Apple; 30 days Best Buy for members; Lenovo/Dell 30 days).
 11. Bought with a credit card that adds warranty/purchase protection.
 
+For reading an individual listing line by line — which chip family is that, is that panel any good, is 5 Gb/s USB-C acceptable — use the spec-sheet decoder in §15.8 that follows.
+
 
 ---
 
@@ -2499,7 +2501,7 @@ There aren't any. This guide has no sponsor. Buy wherever is cheapest with a goo
 
 - **2026-09-06 — v1.0.** Initial publication. Written from a September 2026 vantage point covering Apple M5 family, Intel Core Ultra Series 3, AMD Ryzen AI 300/400 and Strix Halo, Qualcomm Snapdragon X2, Nvidia N1X (announced), the 2025–26 memory shortage and its price effects, Apple's June 2026 price increase, and the Back to School 2026 promotion ending September 24.
 
-- **2026-09-10 — v1.1.** Fact-check and expansion pass. **Apple M6 is announced** (Mac mini, Aug 25; ships Sep 22) — all "M6 rumor" language replaced with announced-chip / laptop-timing-still-reported wording (base MBP 14" late 2026, Air early 2027, no M6 Pro/Max). Sep 9 Apple event noted (no Macs). Added macOS 27 Golden Gate consequences (Intel Macs dropped; last release with Rosetta 2) to Chapters 3, 4, 19. Added Intel **Wildcat Lake / "Core Series 3 without Ultra"** naming-trap section and decoder-ring entry (Ch. 4). Added **Dell XPS 13 (2026)** and **Framework Laptop 12 (2026)** to Tier 1 with 8 GB warnings (Ch. 13); new TL;DR paragraph on the $699/8 GB class. RTX Spark: replaced speculation with the IFA product list and "no prices yet" status (Ch. 4, 12, 15, 19). HP Aug 26 earnings-call price guidance added (Ch. 5, 15). Comparison data: XPS 13 and Framework 12 added. Web: mobile header fix, in-chapter table of contents, search, side-by-side compare, shareable finder results, local marked.js, 404 page, sitemap.
+- **2026-09-10 — v1.1.** Fact-check and expansion pass. **Apple M6 is announced** (Mac mini, Aug 25; ships Sep 22) — all "M6 rumor" language replaced with announced-chip / laptop-timing-still-reported wording (base MBP 14" late 2026, Air early 2027, no M6 Pro/Max). Sep 9 Apple event noted (no Macs). Added macOS 27 Golden Gate consequences (Intel Macs dropped; last release with Rosetta 2) to Chapters 3, 4, 19. Added Intel **Wildcat Lake / "Core Series 3 without Ultra"** naming-trap section and decoder-ring entry (Ch. 4). Added **Dell XPS 13 (2026)** and **Framework Laptop 12 (2026)** to Tier 1 with 8 GB warnings (Ch. 13); new TL;DR paragraph on the $699/8 GB class. RTX Spark: replaced speculation with the IFA product list and "no prices yet" status (Ch. 4, 12, 15, 19). HP Aug 26 earnings-call price guidance added (Ch. 5, 15). Comparison data: XPS 13 and Framework 12 added. New **§15.8 spec-sheet decoder** — a one-page red/amber/green checklist for reading any listing. Web: mobile header fix, in-chapter table of contents, search, side-by-side compare, shareable finder results, local marked.js, 404 page, sitemap.
 
 ## 21.4 How to update this guide
 
